@@ -1,36 +1,11 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## SHINE
 
-## Getting Started
+Shine is an onchain music marketplace designed to foster interaction between artists, fans, and collectors, creating a solid and highly useful ecosystem for all platform users. We believe music has significant collectible potential, as long as the right incentives are in place to ensure the platform's sustainable growth, all within a framework of technological innovation and a user experience that caters to the diverse audiences musicians engage with.
 
-First, run the development server:
+We understand that building an application for collecting music means addressing the needs of both artists and those who wish to collect their works. That’s why we aim to provide every tool possible to lower the barriers often faced by users who are new to blockchain technology, sparking a new wave of artists and fans interacting with Solana and its platforms.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+We built the platform based on two key principles: utility and scalability. It includes features such as unlockable content tied to collectibles, token creation and management using email accounts through Account Abstraction, the ability to create onchain remixes with automatic royalty splits, and generating contracts for collaborative drops between communities and artists. All of this is designed with the goal of simplifying onchain activity rather than complicating it.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ABOUT
+Shine presents itself as an innovative solution within the Solana ecosystem. Currently, there is no marketplace or platform on the blockchain designed specifically for musicians, nor one that provides the technical support needed to use the platform effectively. Musicians on Solana are limited to general-purpose platforms or more visually-focused ones where music is just one type of available media. Shine offers all the necessary tools to support the various content musicians create, whether it's audio formats like songs or snippets, or video formats for music videos or live performances.  At Shine, we prefer to preserve the essence of a network, offering user interaction mechanisms such as profiles, likes, comments, referrals, and shares.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
