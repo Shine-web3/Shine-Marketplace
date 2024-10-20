@@ -1,8 +1,6 @@
 'use client'
 
 import { useState } from 'react'
-import Image from 'next/image'
-import Navigation from '../../components/Navigation'
 import ReleasesTab from '../../components/ReleasesTab'
 import VideosTab from '../../components/VideosTab'
 
@@ -12,14 +10,14 @@ export default function ProfilePage() {
   return (
     <>
       <main className="relative z-10">
-        <div className="max-w-4xl mx-auto py-8 px-4">
+        <div className="max-w-6xl mx-auto py-8 px-4">
           {/* Profile Header */}
           <div className="relative mb-8">
-            <Image src="/placeholder.svg?height=200&width=1000" alt="Profile banner" width={1000} height={200} className="w-full h-32 sm:h-48 object-cover rounded-lg" />
+            <img src="/images/profile/banner.jpeg" alt="Profile banner" width={1200} height={240} className="w-full h-40 sm:h-56 object-cover rounded-lg" />
             <div className="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black to-transparent">
               <div className="flex flex-col sm:flex-row items-start sm:items-end justify-between">
                 <div className="flex items-center sm:items-end space-x-4">
-                  <Image src="/placeholder.svg?height=100&width=100" alt="Profile picture" width={100} height={100} className="w-16 h-16 sm:w-24 sm:h-24 rounded-full border-4 border-black -mb-2 sm:-mb-8" />
+                  <img src="/images/profile/profile.jpg" alt="Profile picture" width={100} height={100} className="w-16 h-16 sm:w-24 sm:h-24 rounded-full border-4 border-black -mb-2 sm:-mb-8" />
                   <div>
                     <h2 className="text-xl sm:text-2xl font-bold">0xGonzalo</h2>
                     <p className="text-gray-400 text-sm sm:text-base">0xac4...664c</p>
@@ -33,7 +31,7 @@ export default function ProfilePage() {
           </div>
 
           {/* About Section */}
-          <div className="mb-8">
+          <div className="mb-8 max-w-4xl mx-auto">
             <h3 className="text-xl font-semibold mb-2">About</h3>
             <p className="text-gray-400 mb-2">magic and art ~</p>
             <p className="text-gray-400 mb-2">Label Owner: @mundo-perro</p>

@@ -1,11 +1,12 @@
 import Link from 'next/link'
 import { Bell, Plus, User, Search } from 'lucide-react'
+import { ConnectButton } from '@rainbow-me/rainbowkit';
 
 export default function Navigation() {
   return (
     <nav className="flex items-center justify-between p-4 border-b border-gray-800 relative z-10 w-full">
       <div className="flex items-center space-x-4 flex-grow">
-        <Link href="/" className="text-2xl font-bold">shine</Link>
+        <Link href="/"><img src="/images/logos/shine.png" alt="Shine Logo" className="h-8" /></Link>
         <div className="relative flex-1 hidden sm:block">
           <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
           <input
@@ -21,13 +22,14 @@ export default function Navigation() {
             <Plus className="w-6 h-6" />
           </Link>
           <Link href="/profile">
-            <User className="w-6 h-6" />
+            <User className="w-6 h-6 mr-4" />
           </Link>
         </div>
       </div>
-      <button className="bg-[#E84142] mx-4 text-white px-4 py-1 rounded-full text-sm hover:bg-blue-700 transition duration-300">
-        Connect
-      </button>
+      {/* <button className="bg-[#E84142] mx-4 text-white px-4 py-1 rounded-full text-sm hover:bg-blue-700 transition duration-300"> */}
+      <ConnectButton />
+        {/* Connect
+      </button> */}
     </nav>
   )
 }

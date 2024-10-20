@@ -3,9 +3,9 @@ import { Heart, MessageCircle, Share2 } from 'lucide-react'
 import { Release } from '../types/types'
 
 const releases: Release[] = [
-  { title: "Echoes of Light", artist: "0xGonzalo", duration: "02:28", timeAgo: "3 months ago", imageUrl: "/placeholder.svg?height=150&width=150" },
-  { title: "Dynamic 2024", artist: "0xGonzalo", duration: "06:44", timeAgo: "6 months ago", imageUrl: "/placeholder.svg?height=150&width=150" },
-  { title: "Ex Nihilo", artist: "0xGonzalo", duration: "03:32", timeAgo: "9 months ago", imageUrl: "/placeholder.svg?height=150&width=150" },
+  { title: "Echoes of Light", artist: "0xGonzalo", duration: "02:28", timeAgo: "3 months ago", imageUrl: "/images/profile/1.png" },
+  { title: "Dynamic 2024", artist: "0xGonzalo", duration: "06:44", timeAgo: "6 months ago", imageUrl: "/images/profile/2.jpg" },
+  { title: "Ex Nihilo", artist: "0xGonzalo", duration: "03:32", timeAgo: "9 months ago", imageUrl: "/images/profile/3.png" },
 ]
 
 export default function ReleasesTab() {
@@ -13,7 +13,7 @@ export default function ReleasesTab() {
     <div className="space-y-6">
       {releases.map((release, index) => (
         <div key={index} className="flex flex-col sm:flex-row items-start space-y-4 sm:space-y-0 sm:space-x-4">
-          <Image src={release.imageUrl} alt={release.title} width={80} height={80} className="rounded-lg w-full sm:w-20 h-20 object-cover" />
+          <img src={release.imageUrl} alt={release.title} width={80} height={80} className="rounded-lg w-full sm:w-20 h-20 object-cover" />
           <div className="flex-1 w-full">
             <div className="flex justify-between items-start mb-2">
               <div>

@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Navigation from '@/components/Navigation';
+import "@rainbow-me/rainbowkit/styles.css";
+import  Providers from "./providers";
+
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -25,13 +28,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <Navigation />
-        {children}
-      </body>
+    <html lang="en"> {/* Added <html> tag */}
+      <body>
+        <Providers>
+          {children}
+        </Providers>
+      </body> {/* Added <body> tag */}
     </html>
   );
 }
